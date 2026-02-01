@@ -16,8 +16,9 @@
     "stylelint-scss": "4.7.0"
   },
   "scripts": {
+    "prepare": "husky install",
     "lint": "stylelint './**/*.scss'",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "stylelint './**/*.scss' --fix",
     "format": "prettier --write './**/*.scss'"
   },
   "husky": {
