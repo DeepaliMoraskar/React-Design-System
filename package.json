@@ -18,7 +18,7 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "stylelint './**/*.scss'",
-    "lint:fix": "stylelint './**/*.scss' --fix",
+    "lint:fix": "yarn lint --fix",
     "format": "prettier --write './**/*.scss'"
   },
   "husky": {
@@ -27,6 +27,6 @@
     }
   },
   "lint-staged": {
-    "**/*.scss": "yarn lint:fix"
+     "**/*.scss": "yarn lint:fix"
   }
 }
