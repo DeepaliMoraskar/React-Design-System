@@ -1,0 +1,17 @@
+[22:36:20.464] [INFO] [36mInitializing Storybook[39m
+[22:36:20.845] [DEBUG] Getting package.json info for /Users/abhi/DEEPALI/React-Design-System/packages/react/package.json...
+[22:36:20.846] [DEBUG] Getting CLI versions from NPM for storybook...
+[22:36:20.846] [DEBUG] Executing command: yarn info storybook version --json
+[22:36:22.486] [INFO] Adding Storybook version 10.2.8 to your project
+[22:36:22.490] [ERROR] [38;2;241;97;97mSB_CLI_INIT_0001 (NxProjectDetectedError): We have detected Nx in your project. Nx has its own Storybook initializer, so please use it instead.
+Run "nx g @nx/storybook:configuration <your-project-name>" to add Storybook to a given Nx app or lib.
+
+More info: https://nx.dev/nx-api/storybook#generating-storybook-configuration
+[39m
+    at ProjectTypeService.autoDetectProjectType (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/chunk-M7TYML2Y.js:735:15)
+    at async ProjectDetectionCommand.execute (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/chunk-M7TYML2Y.js:830:22)
+    at async doInitiate (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/chunk-M7TYML2Y.js:2830:143)
+    at async file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/chunk-M7TYML2Y.js:2882:20
+    at async withTelemetry (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/storybook/dist/_node-chunks/chunk-KIOKJLL5.js:218:12)
+    at async initiate (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/chunk-M7TYML2Y.js:2875:24)
+    at async _Command.<anonymous> (file:///Users/abhi/DEEPALI/React-Design-System/node_modules/create-storybook/dist/_node-chunks/run-6WTLCWSW.js:2684:144)

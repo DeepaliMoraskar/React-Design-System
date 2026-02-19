@@ -1,0 +1,65 @@
+$ storybook build --output-dir=/var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz
+
+[90m┌[39m  Building storybook v10.2.8
+[90m│[39m
+[32m◇[39m  Cleaning outputDir:
+[90m│[39m  [36m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz[39m
+[90m│[39m
+[32m◇[39m  Loading presets
+[90m│[39m
+[33m▲[39m  Could not resolve addon "@storybook/addon-a11y", skipping. Is it
+[90m│[39m  installed?
+[90m│[39m
+[33m▲[39m  Could not resolve addon "@storybook/addon-docs", skipping. Is it
+[90m│[39m  installed?
+[90m│[39m
+[33m▲[39m  Could not resolve addon "@storybook/addon-a11y", skipping. Is it
+[90m│[39m  installed?
+[90m│[39m
+[33m▲[39m  Could not resolve addon "@storybook/addon-docs", skipping. Is it
+[90m│[39m  installed?
+[90m│[39m
+[32m◇[39m  Building manager..
+[90m│[39m
+[34m●[39m  Building preview..
+[90m│[39m  [43mVite[49m [36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+[90m│[39m  [43mVite[49m transforming...
+[90m│[39m  [43mVite[49m [32m✓[39m 84 modules transformed.
+[90m│[39m  [43mVite[49m rendering chunks...
+[90m│[39m  [43mVite[49m computing gzip size...
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[32miframe.html[39m[1m[2m[22m
+[90m│[39m  [2m18.16 kB[22m[1m[22m[2m │ gzip:   5.12 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[35mglobal-BQPcOVQc.css[39m[1m[2m[22m
+[90m│[39m  [2m5.58 kB[22m[1m[22m[2m │ gzip:   1.59 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[36mglobal-D-AC4l1F.js[39m[1m[2m[22m
+[90m│[39m  [2m0.69 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[36mColors.stories-DIRpHHdE.js[39m[1m[2m[22m
+[90m│[39m  [2m1.00 kB[22m[1m[22m[2m │ gzip:   0.51 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[36mSelect.stories-iJ26-g_Q.js[39m[1m[2m[22m
+[90m│[39m  [2m5.10 kB[22m[1m[22m[2m │ gzip:   2.02 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[36mreact-18-CrXWD_hM.js[39m[1m[2m[22m
+[90m│[39m  [2m184.75 kB[22m[1m[22m[2m │ gzip:  57.94 kB[22m
+[90m│[39m  [43mVite[49m
+[90m│[39m  [2m../../../../../../var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz/[22m[2massets/[22m[36miframe-DKFVKUSR.js[39m
+[90m│[39m  [36m[39m[1m[33m1,115.43 kB[39m[22m[2m │ gzip: 319.49 kB[22m
+[90m│[39m
+[33m▲[39m  [43mVite[49m[33m
+[90m│[39m  (!) Some chunks are larger than 500 kB after minification. Consider:
+[90m│[39m  - Using dynamic import() to code-split the application
+[90m│[39m  - Use build.rollupOptions.output.manualChunks to improve chunking:
+[90m│[39m  ]8;;https://rollupjs.org/configuration-options/#output-manualchunkshttps://rollupjs.org/configuration-options/#output-manualchunks]8;;
+[90m│[39m  - Adjust chunk size limit for this warning via
+[90m│[39m  build.chunkSizeWarningLimit.[39m
+[90m│[39m  [43mVite[49m [32m✓ built in 9.75s[39m
+[90m│[39m
+[32m◇[39m  Output directory:
+[90m│[39m  /var/folders/l7/hlzbpqm91_x7hfbtc31678v00000gn/T/chromatic--53220-E8UD0u4wVlQz
+[90m│[39m
+[90m└[39m  Storybook build completed successfully
+

@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "nxCloud": { "enabled": false },
+  "plugins": ["@nx/js"],
+
+  "release": {
+    "groups": {
+      "shared": {
+        "projects": ["@react.ds/*"],
+        "version": {
+          "currentVersionResolver": "git-tag",
+          "specifierSource": "conventional-commits"
+        }
+      }
+    },
+
+    "changelog": {
+      "workspaceChangelog": {
+        "file": "CHANGELOG.md"
+      },
+      "projectChangelogs": true,
+      "automaticFromRef": true
+    }
+  }
+}

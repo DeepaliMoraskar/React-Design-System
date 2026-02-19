@@ -1,0 +1,44 @@
+name: Build & Test CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for Nx affected to work properly
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          NX_DAEMON: false
+
+      # 1. Build everything first (ensures foundation types exist for react)
+      - name: Build All
+        run: yarn nx run-many -t build --all
+
+      # 2. Run Tests (only for affected projects to save time)
+      - name: Run Affected Tests
+        run: yarn nx affected -t test lint --base=origin/main
+        env:
+          NX_DAEMON: false
+
+      # 3. Chromatic (only on PRs)
+      - name: Visual regression tests
+        if: github.event_name == 'pull_request'
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: yarn nx run react:chromatic # Targeted run

@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "scss,js",
+  "ignore": ["dist", "lib"],
+  "exec": "node src/scripts/build.js"
+}

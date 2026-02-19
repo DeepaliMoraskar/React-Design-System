@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="dse-select"
+  >
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="dse-select__label"
+      data-testid="DseSelectButton"
+    >
+      <p
+        class="dse-text dse-text-base"
+      >
+        Please select an option ...
+      </p>
+    </button>
+    <ul
+      class="dse-select__overlay "
+      id="dse-select-list"
+      role="listbox"
+    >
+      <li
+        aria-selected="false"
+        class="dse-select__option  dse-select__option--highlighted"
+        role="menuitemradio"
+        tabindex="0"
+      >
+        <p
+          class="dse-text dse-text-base"
+        >
+          Strict Black
+        </p>
+      </li>
+      <li
+        aria-selected="false"
+        class="dse-select__option  "
+        role="menuitemradio"
+        tabindex="-1"
+      >
+        <p
+          class="dse-text dse-text-base"
+        >
+          Heavenly Green
+        </p>
+      </li>
+      <li
+        aria-selected="false"
+        class="dse-select__option  "
+        role="menuitemradio"
+        tabindex="-1"
+      >
+        <p
+          class="dse-text dse-text-base"
+        >
+          Sweet Pink
+        </p>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

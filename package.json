@@ -1,0 +1,83 @@
+{
+  "name": "@react.ds/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DeepaliMoraskar/React-Design-System.git",
+  "author": "DeepaliMoraskar <deepali.moraskar95@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "playgrounds/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "build": "nx run-many --target=build --all",
+    "build:scss": "nx build scss",
+    "build:foundation": "nx build foundation",
+    "test": "nx run-many --target=test --all --verbose",
+    "test:react": "nx test react",
+    "test:foundation": "nx test foundation",
+    "dev": "yarn nx run-many --target=dev --all",
+    "lint": "yarn lint:ts && yarn lint:scss",
+    "lint:ts": "eslint '**/*.{ts,tsx,js,jsx}'",
+    "lint:affected": "nx affected --target=lint",
+    "lint:scss": "stylelint 'packages/scss/**/*.scss'",
+    "lint:scss:fix": "stylelint 'packages/scss/**/*.scss' --fix",
+    "release": "commit-and-tag-version",
+    "commit": "cz",
+    "build:storybook": "yarn build:foundation && yarn build:scss && yarn nx run @react.ds/react:build-storybook"
+  },
+  "lint-staged": {
+    "packages/scss/**/*.scss": [
+      "nx run @react.ds/scss:lint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@eslint/eslintrc": "^3.3.3",
+    "@nrwl/workspace": "^19.8.4",
+    "@nx/js": "^22.5.1",
+    "@storybook/addon-docs": "^10.2.8",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "commit-and-tag-version": "^12.6.1",
+    "commitizen": "^4.3.1",
+    "css-tree": "^3.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "nx": "^22.5.0",
+    "parcel": "^2.16.4",
+    "postcss": "^8.4.32",
+    "postcss-scss": "^4.0.9",
+    "rollup-plugin-tsconfig-paths": "^1.5.2",
+    "stylelint": "^15.0.0",
+    "stylelint-config-prettier": "9.0.5",
+    "stylelint-config-recommended-scss": "17",
+    "stylelint-config-standard-scss": "17",
+    "stylelint-scss": "7",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

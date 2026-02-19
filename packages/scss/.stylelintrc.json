@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "string-quotes": null,
+    "indentation": null,
+
+    "scss/dollar-variable-pattern": null,
+    "selector-class-pattern": null,
+    "custom-property-pattern": null
+  }
+}

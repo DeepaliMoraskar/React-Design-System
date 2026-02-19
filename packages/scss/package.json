@@ -1,0 +1,32 @@
+{
+  "name": "@react.ds/scss",
+  "version": "1.3.1",
+  "main": "dist/global.css",
+  "license": "MIT",
+  "dependencies": {
+    "modern-normalize": "^3.0.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.97.3",
+    "sass-migrator": "^2.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "postcss-scss": "3.0.5",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.11.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-scss": "^5.3.1"
+  },
+  "scripts": {
+    "lint": "stylelint './**/*.scss'",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write './**/*.scss'",
+    "build": "node src/scripts/build.js",
+    "watch": "nodemon --watch src --ext scss,js --exec \"node src/scripts/build.js\"",
+    "dev": "nodemon --watch src --exec yarn build -e scss"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

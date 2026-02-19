@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Snapshot of FontSizes 1`] = `
+{
+  "base": "base",
+  "lg": "lg",
+  "sm": "sm",
+  "xl": "xl",
+  "xs": "xs",
+}
+`;

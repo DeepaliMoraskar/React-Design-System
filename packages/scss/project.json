@@ -1,0 +1,21 @@
+{
+  "name": "@react.ds/scss",
+  "root": "packages/scss",
+  "sourceRoot": "packages/scss/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node packages/scss/src/scripts/build.js"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["stylelint 'packages/scss/**/*.scss'"],
+        "parallel": false
+      }
+    }
+  }
+}
